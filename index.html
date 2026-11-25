@@ -1,10 +1,10 @@
 <!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover"><meta name="color-scheme" content="light"><meta name="theme-color" content="#EEEEEE"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Тренировки"><link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAADF0lEQVR4Xu3dMU4bQRiG4SWKlCanMCdAadLlShwlV8oBkC9DQ5fCUkTBLv/nWc/OOM9Tj+WZ3V8vmBXw8Hg6LfCRLy4LawwHhoOccqAc5JQD5SCnHCgHOeVAOcgpB8pBTjlQDnLKgXKQUw6Ug5xyoBzklAPlIKccKAc55UA5yCkHykFOOVAOcsqBcpBTDpSDnHKgHOS+5i9p8vvb9+3XP7+9Nr3B5Ia6Pl2/rHx68mUprblXo12ffsNROflFfeU9qZ+6vrJRp+FIz5Oun1163nT9dToNBzMyHKwyHBgOcsqBcpBTDpSDnHKgHOR6P5W9zoc/LZ7o+e2k+5/gy8rac4Q+zxfazbv/0YdjewLGn4+p9z/0cFTufWXNUSp7q6w5ytDDwbEMBz7KklMOlIOccqAc5JQD5SCnHCgHOeVAOcgpB8pBTjlQDnLKgXKQUw6Ug5xyoBzklAPlIKccrNrtt+zP55eNy/zn56/0JpzPL8VXbb/1ger7L658b/vUT08/2g++TzmGvT3/rV3uyA7Dscs+2F37fWkdjvYdcDuNd6dpOBrfmw5a7lHTcHDfDAerDAeGg5xyoBzklAPlINdUjl2e7nBTLfeoaTiWpem9ubWWyViW5uEwH8NqnIx9hsN8DKh9MpZleXg8nTqc7Yq/8P389lp81bD/W6O+/+LK9zqcuvV7Du6Y4WCV4cBwkFMOlIOccqAc5JQD5SCnHCgHOeVAOcgpB8pBTjlQDnLKgXKQUw6Ug5xyoBzklAPlIDd0OSq/8VdZc5TK3iprjjL0cCzLJ9du5Ct7sb3Dwfc/+nBsXN/Br+w/a/scf/+7/UuNmxr/Om6bdP8TlIOjGA58lCWnHCgHOeVAOcgpB8pBTjk4uhzpz4/T9bNLz5uuv06/ctTPU195T+qnrq9s1G84Pn1+fdHt5AOqnL2yZi+d/vY5M+paDuZiODj60wozUg6Ug5xyoBzklAPlIKccKAc55UA5yCkHykFOOVAOcsqBcpBTDpSDnHKgHOSUA+UgpxwoBznlQDnIKQfKQU45UA5yyoFykFMOVv0F/j+Q6WVemvMAAAAASUVORK5CYII="><title>Журнал тренировок</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap">
 <style>
-:root{--bg:#EEEEEE;--ink:#2D2D2D;--mute:#AFAFAF;--ph:#D2D2D2;--red:#9C2327;--on:#FAFAFA;--dark:#2D2D2D;--shd:rgba(0,0,0,.15);--shl:#FFFFFF;--f:"Unbounded",system-ui,-apple-system,sans-serif;color-scheme:light}
+:root{--bg:#EEEEEE;--ink:#2D2D2D;--mute:#777777;--ph:#B3B3B3;--red:#9C2327;--on:#FAFAFA;--dark:#2D2D2D;--shd:rgba(0,0,0,.15);--shl:#FFFFFF;--f:"Unbounded",system-ui,-apple-system,sans-serif;color-scheme:light}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;background:var(--bg)}
 html{-webkit-text-size-adjust:100%}
-body{color:var(--ink);font:400 8px/1.3 var(--f);-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+body{color:var(--ink);font:400 12px/1.4 var(--f);-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
 input{-webkit-user-select:text;user-select:text;-webkit-appearance:none;appearance:none}
 button,input{font:inherit;color:inherit;border:0;padding:0;margin:0;background:none;border-radius:10px;outline:none}
 button{cursor:pointer}
@@ -23,7 +23,7 @@ button:disabled{opacity:1;background:none;box-shadow:none;transform:none;color:v
 .ar.plus{color:var(--mute)}
 .pill{flex:1;min-width:0;height:44px;border-radius:10px;background:var(--dark);color:var(--on);box-shadow:inset 0 0 8px rgba(0,0,0,.5);display:grid;place-items:center;font:700 15px/1 var(--f);text-transform:uppercase;white-space:nowrap}
 .pill.sm{font-size:11px}
-.days{display:flex;gap:6px;margin-top:20px}
+.days{display:flex;gap:6px;margin-top:24px}
 .dy{width:44px;height:44px;flex:none;font:700 15px/1 var(--f);text-transform:uppercase;color:var(--ink)}
 .dy.rest{color:var(--mute)}
 .dy.sel{background:var(--red);color:var(--on)}
@@ -32,58 +32,58 @@ button:disabled{opacity:1;background:none;box-shadow:none;transform:none;color:v
 .list{padding:44px 32px 180px}
 .list.nwl,.list.emp{padding-top:20px}
 .list.emp{padding-top:calc(50vh - 150px)}
-.ex{margin-bottom:40px}
+.ex{margin-bottom:56px}
 .nm{font:700 15px/15px var(--f);text-transform:uppercase;overflow-wrap:anywhere;-webkit-user-select:none;user-select:none}
-.vr{font:400 8px/12px var(--f);color:var(--mute);min-height:12px}
-.rs{position:relative;margin-top:7px}
-.r{position:relative;height:44px;margin-bottom:10px}
+.vr{font:400 12px/16px var(--f);color:var(--mute);min-height:16px}
+.rs{position:relative;margin-top:10px}
+.r{position:relative;height:44px;margin-bottom:14px}
 .r>*,.nr2>*{position:absolute;top:0}
 .wt{left:0;width:72px;height:44px;text-align:center;font:700 20px var(--f)}
 .wt.sm{font-size:15px}
-.kg{left:72px;width:22px;height:44px;display:grid;place-items:center;font:400 8px var(--f);color:var(--mute)}
+.kg{left:75px;width:22px;height:44px;display:grid;place-items:center;font:400 12px var(--f);color:var(--mute)}
 .st{width:44px;height:44px;font:700 16px var(--f);color:var(--mute)}
 .mn{left:129px}
 .pl{left:208px}
 .rp{left:168px;width:44px;height:44px;text-align:center;font:700 20px var(--f)}
-.wt::placeholder,.rp::placeholder,.ib::placeholder,.rg::placeholder{color:var(--ph);opacity:1}
+.wt::placeholder,.rp::placeholder,.ib::placeholder,.rg::placeholder{color:var(--mute);opacity:1}
 .rp{font-size:20px}
-.ph{position:absolute;top:0;height:44px;display:grid;place-items:center;pointer-events:none;color:var(--ph);font:700 20px var(--f);text-align:center;white-space:nowrap}
+.ph{position:absolute;top:0;height:44px;display:grid;place-items:center;pointer-events:none;color:var(--mute);font:700 20px var(--f);text-align:center;white-space:nowrap}
 .phw{left:0;width:72px}.phr{left:168px;width:44px;font-size:8px}
 .wt.sm+.ph{font-size:15px}
 .wt:not(:placeholder-shown)+.ph,.rp:not(:placeholder-shown)+.ph{display:none}
 .rb{position:absolute;right:0;top:0;width:44px;border-radius:10px;background:var(--red);color:var(--on);font:700 8px/22px var(--f);text-align:center;display:flex;align-items:flex-start;justify-content:center}
 .rb.act{background:var(--dark)}
 
-.ed{margin-bottom:30px}
-.nr{display:flex;gap:6px;margin-bottom:10px}
+.ed{margin-bottom:44px}
+.nr{display:flex;gap:8px;margin-bottom:14px}
 .ib{display:block;width:100%;height:44px;padding:0 13px;font:700 15px var(--f);text-transform:uppercase;min-width:0}
 .nr .ib{flex:1;width:auto}
-.vi{font:400 8px var(--f);text-transform:none}
+.vi{font:400 12px var(--f);text-transform:none;color:var(--mute)}
 .sb{width:36px;height:44px;flex:none;font:700 10px var(--f);color:var(--mute)}
 .sb.dg{background:var(--red);color:var(--on)}
-.lb{font:400 8px/1.2 var(--f);color:var(--mute);display:flex;align-items:center;height:44px}
-.er .wt{left:41px}
+.lb{font:400 12px/1.35 var(--f);color:var(--mute);display:flex;align-items:center;height:44px}
+.er .wt{left:60px}
 .rg{left:223px;width:45px;height:44px;text-align:center;font:700 8px/1 var(--f)}
 .ri{width:100%;height:22px;text-align:center;font:700 8px var(--f);color:var(--on);background:none;border-radius:0}
-.ar2{display:flex;gap:10px}
+.ar2{display:flex;gap:14px}
 .bl{height:44px;width:100%;font:700 10px var(--f);color:var(--mute)}
 .ar2 .bl+.bl{flex:none;width:50px}
-.tri{display:flex;gap:10px}
+.tri{display:flex;gap:14px}
 .tri .bl{font-size:8px}
 
 .rday{display:grid;place-items:center;text-align:center;min-height:calc(100vh - 220px);padding:0 32px;font:700 15px/1.2 var(--f);text-transform:uppercase}
-.rday small{display:block;font:400 8px/1.4 var(--f);color:var(--mute);text-transform:none;margin-top:14px}
-.intro{font:400 8px/1.5 var(--f);margin:0 0 40px;max-width:313px;-webkit-user-select:text;user-select:text}
+.rday small{display:block;font:400 12px/1.5 var(--f);color:var(--mute);text-transform:none;margin-top:14px}
+.intro{font:400 12px/1.6 var(--f);margin:0 0 48px;max-width:313px;-webkit-user-select:text;user-select:text}
 .nt{text-align:center;color:var(--mute);margin:0 32px}
-.nr2{position:relative;height:44px;margin-top:10px}
+.nr2{position:relative;height:44px;margin-top:14px}
 .nr2 .lb{left:0;width:51px}
-.nr2 .wt{left:41px}
-.keep{left:123px;width:195px;height:44px;font:700 15px var(--f);color:var(--mute)}
-.incs{display:flex;gap:10px;margin-top:10px}
-.inc{width:72px;height:44px;font:700 16px var(--f);color:var(--mute)}
+.nr2 .wt{left:60px}
+.keep{left:142px;width:176px;height:44px;font:700 15px var(--f);color:var(--mute)}
+.incs{display:flex;gap:14px;margin-top:14px}
+.inc{flex:1;height:44px;font:700 16px var(--f);color:var(--mute)}
 .keep,.inc{color:var(--mute)}
-.mn2 .bl{margin-bottom:10px;color:var(--mute)}
-.mn2 .nm.gh{margin:30px 0 12px}
+.mn2 .bl{margin-bottom:14px;color:var(--mute)}
+.mn2 .nm.gh{margin:44px 0 16px}
 .mn2 .tri .bl{margin-bottom:0}
 .mn2 .dgr{color:var(--red)}
 
@@ -91,11 +91,11 @@ button:disabled{opacity:1;background:none;box-shadow:none;transform:none;color:v
 #fade.tall{height:180px}
 .bar{position:fixed;left:0;right:0;bottom:calc(16px + env(safe-area-inset-bottom,0px));max-width:390px;margin:0 auto;padding:0 32px;display:flex;justify-content:space-between;gap:10px;z-index:30}
 .bt{height:44px;border-radius:10px;background:var(--dark);color:var(--on);font:700 15px var(--f)}
-.tm{position:fixed;left:0;right:0;bottom:calc(16px + env(safe-area-inset-bottom,0px));margin:0 auto;width:min(344px,calc(100% - 46px));height:44px;border-radius:10px;background:var(--dark);color:var(--on);display:flex;align-items:center;gap:6px;padding:0 19px 0 20px;z-index:30}
+.tm{position:fixed;left:0;right:0;bottom:calc(16px + env(safe-area-inset-bottom,0px));margin:0 auto;width:min(344px,calc(100% - 46px));height:44px;border-radius:10px;background:var(--dark);color:var(--on);display:flex;align-items:center;gap:12px;padding:0 19px 0 20px;z-index:30}
 .tm.end{background:var(--red)}
-.tn{flex:0 1 auto;max-width:96px;font:400 8px var(--f);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-right:auto}
+.tn{flex:0 1 auto;min-width:0;font:400 12px/1.2 var(--f);overflow-wrap:anywhere;margin-right:auto}
 .tv{font:700 15px var(--f);min-width:50px;text-align:right}
-.more{flex:1;height:44px;display:flex;justify-content:flex-end;align-items:center;font:700 15px var(--f);padding:0 0 0 10px;text-align:right}
+.more{height:44px;display:flex;justify-content:flex-end;align-items:center;font:700 15px var(--f);padding:0 0 0 10px;text-align:right;flex:none;margin-left:auto;white-space:nowrap}
 .rz:active{box-shadow:inset -2px -2px 4px var(--shl),inset 2px 2px 4px var(--shd)}
 button.rz:active{transform:scale(.97)}
 .st:active,.ar:active{transform:scale(.85)}
@@ -213,6 +213,14 @@ var SVG_L='<svg width="7" height="12" viewBox="0 0 7 12" fill="none" stroke="cur
 var SVG_R='<svg width="7" height="12" viewBox="0 0 7 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l5 5-5 5"/></svg>';
 function mmss(s){s=Math.max(0,Math.round(s));return Math.floor(s/60)+":"+pad(s%60)}
 function parseRest(t){t=String(t).trim();var m=t.match(/^(\d+)\s*[:.,]\s*(\d{1,2})$/);if(m)return (+m[1])*60+(+m[2]);var v=pnum(t);return v==null?null:Math.max(0,Math.round(v))}
+function repBg(ex,v){
+  if(v==null)return "";
+  var lo=ex.min,hi=ex.max;
+  if(v<lo)return "hsla(0,75%,52%,.12)";
+  if(v>hi)return "hsla(205,80%,55%,.12)";
+  var t=hi>lo?(v-lo)/(hi-lo):1;
+  return "hsla("+Math.round(48+t*87)+","+Math.round(95-t*40)+"%,50%,"+(.17-t*.04).toFixed(3)+")";
+}
 function wcls(v){return String(v).length>4?" sm":""}
 function pillHtml(label,lp){return '<div class="pill'+(label.length>14?" sm":"")+'"'+(lp?' data-lp="'+lp+'"':"")+'>'+esc(label)+'</div>'}
 function simpleTop(label){return '<div class="top plain"><div class="wk"><span class="ar"></span>'+pillHtml(label)+'<span class="ar"></span></div></div>'}
@@ -235,14 +243,14 @@ function rowHtml(ex,s,i){
     '<input class="wt '+(wi?"ps":"rz")+wcls(wv)+'" inputmode="decimal" placeholder=" " data-ph="'+fmt(s.weight)+'" data-f="weight" data-ex="'+ex.id+'" data-i="'+i+'" value="'+(wi?wv:"")+'" aria-label="Вес, подход '+(i+1)+'"><span class="ph phw">'+fmt(s.weight)+'</span>'+
     '<span class="kg">кг</span>'+
     '<button class="st mn" data-act="dec" aria-label="Меньше">–</button>'+
-    '<input class="rp '+(on?"ps":"rz")+'" inputmode="numeric" data-f="reps" data-ex="'+ex.id+'" data-i="'+i+'" placeholder=" " value="'+(on?s.reps:"")+'" aria-label="Повторы, подход '+(i+1)+'"><span class="ph phr">'+ex.min+'–'+ex.max+'</span>'+
+    '<input class="rp '+(on?"ps":"rz")+'"'+(on?' style="background-color:'+repBg(ex,s.reps)+'"':"")+' inputmode="numeric" data-f="reps" data-ex="'+ex.id+'" data-i="'+i+'" placeholder=" " value="'+(on?s.reps:"")+'" aria-label="Повторы, подход '+(i+1)+'"><span class="ph phr">'+ex.min+'–'+ex.max+'</span>'+
     '<button class="st pl" data-act="inc" aria-label="Больше">+</button></div>';
 }
 function exView(ex){
   var n=ex.sets.length, act=timer&&timer.ex===ex.id;
   var h='<div class="ex" data-ex="'+ex.id+'"><div class="nm" data-lp="editDay">'+esc(ex.name||"БЕЗ НАЗВАНИЯ")+'</div><div class="vr">'+esc(ex.variant)+'</div><div class="rs">';
   ex.sets.forEach(function(s,i){h+=rowHtml(ex,s,i)});
-  return h+'<button class="rb'+(act?" act":"")+'" data-act="timer" data-ex="'+ex.id+'" style="height:'+(54*n-10)+'px" aria-label="Таймер отдыха">'+mmss(ex.rest||0)+'</button></div></div>';
+  return h+'<button class="rb'+(act?" act":"")+'" data-act="timer" data-ex="'+ex.id+'" style="height:'+(58*n-14)+'px" aria-label="Таймер отдыха">'+mmss(ex.rest||0)+'</button></div></div>';
 }
 function exEdit(ex,idx,n){
   var c=confirmDel===ex.id, k=ex.sets.length;
@@ -256,10 +264,10 @@ function exEdit(ex,idx,n){
     var wv=fmt(s.weight);
     h+='<div class="r er" data-ex="'+ex.id+'" data-i="'+i+'"><span class="lb" style="left:0;width:51px">Вес, кг</span>'+
       '<input class="wt '+(wv!==""?"ps":"rz")+wcls(wv)+'" inputmode="decimal" data-f="weight" data-ex="'+ex.id+'" data-i="'+i+'" value="'+wv+'" aria-label="Вес, подход '+(i+1)+'">'+
-      '<span class="lb" style="left:163px;width:56px">Диапазон повторов</span>'+
+      '<span class="lb" style="left:140px;width:80px">Диапазон повторов</span>'+
       '<input class="rg ps" inputmode="numeric" placeholder="6–10" data-f="range" data-ex="'+ex.id+'" value="'+ex.min+'–'+ex.max+'" aria-label="Диапазон повторов"></div>';
   });
-  h+='<div class="rb" style="height:'+(54*k-10)+'px"><input class="ri" inputmode="numeric" data-f="rest" data-ex="'+ex.id+'" value="'+mmss(ex.rest||0)+'" aria-label="Отдых, м:сс"></div></div>'+
+  h+='<div class="rb" style="height:'+(58*k-14)+'px"><input class="ri" inputmode="numeric" data-f="rest" data-ex="'+ex.id+'" value="'+mmss(ex.rest||0)+'" aria-label="Отдых, м:сс"></div></div>'+
     '<div class="ar2"><button class="rz bl" data-act="setsPlus" data-ex="'+ex.id+'">ЕЩЁ ПОДХОД</button>'+
     '<button class="rz bl" data-act="setsMinus" data-ex="'+ex.id+'"'+(k<2?" disabled":"")+' aria-label="Убрать подход">–</button></div></div>';
   return h;
@@ -278,11 +286,11 @@ function menuHtml(){
     '<button class="rz bl" data-act="exportData">СОХРАНИТЬ КОПИЮ</button>'+
     '<button class="rz bl" data-act="importData">ЗАГРУЗИТЬ КОПИЮ</button><input type="file" id="impf" accept="application/json,.json" hidden>'+
     '<div class="nm gh">АВТОКОПИЯ В GITHUB</div>'+
-    '<p class="intro" style="margin-bottom:16px">Файл backup.json перезаписывается через 15 секунд после изменений и при открытии, если копии больше 20 часов. Репозиторий лучше сделать приватным.</p>'+
-    '<input class="ib ps" id="ghrepo" value="'+esc(c.repo||"")+'" placeholder="ВЛАДЕЛЕЦ/РЕПОЗИТОРИЙ" autocapitalize="off" autocorrect="off" spellcheck="false" style="text-transform:none;font-size:10px;margin-bottom:10px">'+
-    '<input class="ib ps" id="ghtok" type="password" value="'+esc(c.token||"")+'" placeholder="ТОКЕН" autocomplete="off" autocapitalize="off" style="text-transform:none;font-size:10px;margin-bottom:10px">'+
+    '<p class="intro" style="margin-bottom:20px">Файл backup.json перезаписывается через 15 секунд после изменений и при открытии, если копии больше 20 часов. Репозиторий лучше сделать приватным.</p>'+
+    '<input class="ib ps" id="ghrepo" value="'+esc(c.repo||"")+'" placeholder="ВЛАДЕЛЕЦ/РЕПОЗИТОРИЙ" autocapitalize="off" autocorrect="off" spellcheck="false" style="text-transform:none;font-size:10px;margin-bottom:14px">'+
+    '<input class="ib ps" id="ghtok" type="password" value="'+esc(c.token||"")+'" placeholder="ТОКЕН" autocomplete="off" autocapitalize="off" style="text-transform:none;font-size:10px;margin-bottom:14px">'+
     '<div class="tri"><button class="rz bl" data-act="ghSave">СОХРАНИТЬ</button><button class="rz bl" data-act="ghRestore">ВОССТАНОВИТЬ</button><button class="rz bl" data-act="ghOff">ОТКЛЮЧИТЬ</button></div>'+
-    '<p class="intro" id="ghst" style="margin:10px 0 40px">'+esc(ghMsg||(c.last?"Последняя выгрузка: "+new Date(c.last).toLocaleString("ru-RU"):"Не настроено"))+'</p>'+
+    '<p class="intro" id="ghst" style="margin:14px 0 48px">'+esc(ghMsg||(c.last?"Последняя выгрузка: "+new Date(c.last).toLocaleString("ru-RU"):"Не настроено"))+'</p>'+
     '<button class="rz bl dgr" data-act="delWeek">'+(confirmWeek?"ТОЧНО УДАЛИТЬ "+esc(weekLabel(curId))+"?":"УДАЛИТЬ НЕДЕЛЮ "+esc(weekLabel(curId)))+'</button></div>';
 }
 function emptyHtml(){
@@ -388,7 +396,7 @@ function paintTimer(){
   el.hidden=!show;
   fade.className=(show||!bar.hidden)?"tall":"";
   if(!show)return;
-  var st=timer.done?"d":"r";
+  var st=(timer.done?"d":"r")+"|"+timer.ex;
   if(el.getAttribute("data-st")!==st){
     el.setAttribute("data-st",st); el.className="tm"+(timer.done?" end":"");
     el.innerHTML=timer.done?
@@ -416,7 +424,7 @@ function stepReps(btn,dir){
   var row=btn.closest(".r"), ex=exOf(row), i=+row.getAttribute("data-i"), s=ex.sets[i];
   if(s.reps==null){s.reps=(i>0&&ex.sets[i-1].reps!=null)?ex.sets[i-1].reps:ex.max}
   else s.reps=Math.max(0,s.reps+dir);
-  var inp=row.querySelector('[data-f="reps"]'); inp.value=s.reps; setSel(inp,true);
+  var inp=row.querySelector('[data-f="reps"]'); inp.value=s.reps; setSel(inp,true); inp.style.backgroundColor=repBg(ex,s.reps);
   touch(curId);
 }
 function nextId(dir){var ids=sortedIds(),i=ids.indexOf(curId)+dir;return ids[i]}
@@ -515,7 +523,7 @@ document.addEventListener("input",function(e){
   var i=+t.getAttribute("data-i"), s=ex.sets[i];
   if(f==="reps"){
     v=pnum(t.value); s.reps=v==null?null:Math.max(0,Math.round(v));
-    setSel(t,s.reps!=null);
+    setSel(t,s.reps!=null); t.style.backgroundColor=repBg(ex,s.reps);
   }else if(f==="weight"&&!edit){
     v=pnum(t.value); s.wIn=v; setSel(t,v!=null);
     t.classList.toggle("sm",(t.value||t.getAttribute("data-ph")||"").length>4);
